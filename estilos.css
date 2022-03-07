@@ -1,0 +1,254 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    margin: 0;
+}
+h1{font-size: 3.5em;}
+h2{font-size: 2.7em;}
+h3{font-size: 2em;}
+p{font-size: 1.25em;}
+ul{list-style: none;}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+header{
+    display: flex;
+    min-height: 60px;
+    background-color: black;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    height: 90px;
+    margin-right: 10px;
+}
+nav{
+    font-weight: 600;
+    padding-right: 10px;
+}
+nav a:hover{
+    color: aqua;
+}
+
+@media (max-width:700px){
+    header{
+        flex-direction: column;
+    }
+    nav{
+        padding: 10px;
+    }
+}
+
+button{
+    font-size: 1em;
+    font-weight: bold;
+    padding: 8px 25px;
+    border-radius: 5px;
+    border: 1px solid black;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    color: white;
+    background-color: rgb(55, 156, 202);
+}
+
+button:hover{
+    background-color: aquamarine;
+}
+
+.container1, .container2, .container3, .container4{
+    max-width: 1400px;
+    margin: auto;
+    padding: 50px;
+    margin: 12px;
+    background-repeat: repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#principal .container1{
+    display:  flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 70vh;
+    color: white;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(pastelfondo.jpg);
+    background-repeat: repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#principal2 .container2{
+    display:  flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 70vh;
+    color: rgb(97, 165, 65);
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(sabores.jpg)
+}
+#principal3 .container3{
+    display:  flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 70vh;
+    color: rgb(212, 23, 140);
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(adornos.jpg)
+}
+#principal4 .container4{
+    display:  flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 70vh;
+    color: rgb(199, 156, 40);
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(pedido.jpg)
+}
+#caracteristicas .container5{
+    text-align: center;
+    padding: 70px 12px;
+}
+#caracteristicas{
+    margin: 16px 0px;
+    font-weight: bold;
+    background-color: palevioletred;
+}
+#final .containerfinal{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: blanchedalmond;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    height: 50vh;
+}
+
+#pasteles1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(113, 208, 248);
+    font-weight: bold;
+}
+table{
+    border-collapse: collapse;
+    text-align: center;
+    width: 80%;
+    margin: 16px 0px;
+    height: 60vh;
+}
+tr, th{
+    padding: 1%;
+}
+
+#sabores1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(199, 113, 248);
+    font-weight: bold;
+}
+
+#adornos1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(248, 140, 113);
+    font-weight: bold;
+}
+
+#formulario1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(229, 238, 146);
+    font-weight: bold;
+}
+
+.tablatotalsabores, .tablatotaladornos, .tablatotalpedidos{
+    max-width:fit-content;
+    border: solid 1px black;
+    border-collapse: collapse;
+    width: auto;
+    margin: 10px;
+    background-repeat: repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#totalsabores{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(199, 113, 248);
+    font-weight: bold;
+}
+
+#totaladorno{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(248, 140, 113);
+    font-weight: bold;
+}
+
+#totalpedidos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(229, 238, 146);
+    font-weight: bold;
+}
+
